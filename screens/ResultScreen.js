@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
-
+import win from "../assets/images/win.jpg";
+import lose from "../assets/images/lose.png";
 
 const ResultScreen = ({ result }) => {
   const [image, setImage] = useState("");
@@ -21,7 +22,7 @@ const ResultScreen = ({ result }) => {
   return (
     <View style={styles.container}>
       <Card>
-        <Text>{`you ${result}`}</Text>
+        <Text>{`You ${result}`}</Text>
       </Card>
       <Image style={styles.imageContainer} source={image} />
     </View>
